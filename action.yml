@@ -1,0 +1,13 @@
+name: 'reviewers'
+description: 'Replace the reviewers of a pull request with a list of users'
+author: '@abelorosz'
+
+# Define your inputs here.
+inputs:
+  token:
+    description: 'GitHub token'
+    required: true
+
+runs:
+  using: node20
+  main: dist/index.js
